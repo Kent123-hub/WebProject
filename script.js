@@ -1,0 +1,1 @@
+document.getElementById("top").innerText = "Welcome to MangaKen!! by:Kent Cervantes";

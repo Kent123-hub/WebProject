@@ -1,0 +1,168 @@
+body{
+    height:90vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-emphasis: center;
+    background-color: rgba(8, 8, 69, 0.703);
+}
+.container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    height:280px;
+    gap: 20px;
+    transition:0.5s;
+}
+.container li{
+    position: relative;
+    overflow: hidden;
+    flex:  0 250px;
+    border-radius: 50px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 2px solid blue;
+    box-shadow: 40px 40px 45px rgba(0, 0, 0, 0.4), -2px -5px -10px rgba(0, 0, 0, 0.1);
+}
+.container li img{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    translate: -50px -50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container li,
+.container li img
+{
+    transition: 0.3s ease;
+}
+.container li .content{
+    transition: 1s ease;
+}
+.container span{
+    text-align: center;
+    width: 85%;
+}
+.container h2{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 15px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    color: white;
+}
+.container p{
+    color: floralwhite;
+    font-size: 14px;
+    width: 100%;
+}
+.container li .content{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    color: white;
+    padding: 50px;
+    background:
+    linear-gradient(
+        0deg, rgb(0 0 0/70%)10%, rgb(255 255 255/0%)100%
+    );
+    opacity: 0;
+    visibility: hidden;
+}
+.container:hover{
+    gap: 0.3;
+}
+.container li .container span{
+    position: absolute;
+    z-index: 3;
+    left: 50px;
+    bottom: 0;
+    translate: -50%;
+    scale: 0.85;
+    visibility: hidden;
+    opacity: 0;
+}
+.container li:hover{
+    flex: 0 1 260px;
+    scale: 1.1;
+    z-index: 10;
+    opacity: 1;
+}
+.container li:hover .content{
+    opacity: 1;
+    visibility: visible;
+}
+.container li:hover span{
+    scale: 1;
+    opacity: 1;
+    visibility: visible;
+}
+.ken{
+    position: absolute;
+    top:15px;
+    left:545px;
+    width: 150px;
+    font-size: 50px;
+    
+}
+.baki{
+    position: absolute;
+    top:408px;
+    left:348px;
+    width: 70px;
+    background: black;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: inset 0 0 0 blue;
+    transition: ease 1.5s;
+}
+.baki:hover{
+    box-shadow:inset 200px 0 0 limegreen ;
+    color: black;
+}
+.Ragnarok{
+    position: absolute;
+    top:408px;
+    left: 622px;
+    width: 70px;
+    background: black;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: inset 0 0 0 blue;
+    transition: ease 1.5s;
+}
+.Ragnarok:hover{
+    box-shadow:inset 200px 0 0 limegreen ;
+    color: black;
+}
+.Ippo{
+    position: absolute;
+    top:408px;
+    left: 892px;
+    width: 70px;
+    background: black;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: inset 0 0 0 blue;
+    transition: ease 1.5s;
+}
+.Ippo:hover {
+    box-shadow: inset 200px 0 0 limegreen;
+    color: black;
+}
+.pop {
+    top: 10px;
+    font-size: 10px;
+}
